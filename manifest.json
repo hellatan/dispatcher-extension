@@ -1,0 +1,13 @@
+{
+	"manifest_version": 2,
+	"name": "Dispatch Manager",
+	"version": "0.0.1",
+	"description": "Easily go to github PRs and jira ticets",
+	"browser_action": {
+		"default_icon": "icon.png",
+		"popup": "popup.html"
+	},
+	"background": {
+			"scripts": ["background.js"]
+	}
+}
