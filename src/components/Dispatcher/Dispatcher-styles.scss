@@ -1,0 +1,7 @@
+$enable-css-modules: true;
+
+@import "../../../node_modules/dibs-styles/exports/grid";
+
+.tabsWrapper {
+	display: block;
+}
