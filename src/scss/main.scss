@@ -9,3 +9,10 @@
 @import "../../node_modules/dibs-styles/exports/viewport";
 @import "../../node_modules/dibs-styles/exports/dibs-normalize";
 @import "../../node_modules/dibs-styles/exports/grid";
+
+:global {
+    #main {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
