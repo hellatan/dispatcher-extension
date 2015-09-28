@@ -29,27 +29,34 @@ export default class Popup extends React.Component {
             <div>
                 <h1>1stdibs Dispatcher</h1>
                 <div className={popupStyles.tabsWrapper}>
-                    <div className="tab">
-                        <form action="" id="githubForm" class="form-group">
-                            <TextBox inputId="formMilestoneInput" label="Milestone" placeholder="i.e: 5.1, 5,2, etc" />
-                            <RadioGroup groupLabel="Status" formId="formStatus" radios={radioGroups} />
-                            <TextBox inputId="formUserNameInput" label="User Name/Author" placeholder="github user name" />
-
-                            <button id="formMilestoneSearch" class="form-button">go to github!</button>
+                    <div className={popupStyles.tabName}>Github</div>
+                    <div className={popupStyles.tabContent}>
+                        <form action="" id="githubForm" className="form-group">
+                            <div className={popupStyles.rowFlexTransition}>
+                                <TextBox inputId="formMilestoneInput" label="Milestone" placeholder="i.e: 5.1, 5,2, etc" />
+                            </div>
+                            <div className={popupStyles.rowFlexTransition}>
+                                <RadioGroup groupLabel="Status" formId="formStatus" radios={radioGroups} />
+                            </div>
+                            <div className={popupStyles.rowFlexTransition}>
+                                <TextBox inputId="formUserNameInput" label="User Name/Author" placeholder="github user name" />
+                            </div>
+                            <button id="formMilestoneSearch" className="form-button">go to github!</button>
                         </form>
                     </div>
 
-                    <div className="tab">
-                        <form action="" id="jiraForm" class="form-group">
+                    <div className={popupStyles.tabName}>Jira</div>
+                    <div className={popupStyles.tabContent}>
+                        <form action="" id="jiraForm" className="form-group">
                             <TextBox inputId="formFixVersionInput" label="Fix Version" placeholder="fix version" />
                             <TextBox inputId="formMilestoneInput" label="Assignee(s)" placeholder="assignee(s), comma separated" />
 
-                            <button id="formFixVersionSearch" class="form-button">go to jira!</button>
+                            <button id="formFixVersionSearch" className="form-button">go to jira!</button>
                         </form>
-                        <form action="" id="jiraFormTicket" class="form-group">
+                        <form action="" id="jiraFormTicket" className="form-group">
                             <TextBox inputId="formJiraTicketInput" label="Ticket Number" placeholder="ticket number" />
 
-                            <button id="formJiraTicketSearch" class="form-button">go to jira ticket!</button>
+                            <button id="formJiraTicketSearch" className="form-button">go to jira ticket!</button>
                         </form>
                     </div>
 

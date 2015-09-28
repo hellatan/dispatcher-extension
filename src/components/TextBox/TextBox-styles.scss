@@ -1,13 +1,15 @@
 @import "../../../node_modules/dibs-styles/exports/grid";
 
 .wrapper {
-	display: block;
+    display: block;
+    background-color: #d3d3d3;
+    padding: 10px;
 }
 
 .label {
-	display: block;	
+    display: block;
 }
 
 .box {
-	display: block;	
+    display: block;
 }
